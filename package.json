@@ -1,0 +1,15 @@
+{
+  "name": "responsive-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch styles/scss:styles/css",
+    "start": "npm run compile:sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}
