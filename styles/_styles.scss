@@ -1,0 +1,71 @@
+@use "fonts";
+@use "colors";
+
+@import "navigation";
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: fonts.$main-font;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 810px;
+    position: relative;
+  }
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  & h2 {
+    color: colors.$navyblue;
+    font-family: fonts.$heading-font;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    max-width: 455px;
+    
+    min-height: 102px;
+    
+    line-height: 102px;
+    letter-spacing: -2px;
+    font-size: 90px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+      font-size: 72px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 36px;
+    }
+  }
+  & p {
+    color: colors.$darkblue;
+    text-align: center;
+    max-width: 573.5px;
+    width: 100%;
+    min-height: 66px;
+    height: 100%;
+    line-height: 33px;
+    font-size: 22px;
+    margin: 0px;
+    @media screen and (max-width: 320px) {
+      line-height: 18px;
+      font-size: 12px;
+      width: 100%;
+      max-width: 217px;
+      min-height: 49px;
+     
+    }
+  }
+}
+
+.img-horses {
+  margin-top: 40px;
+}

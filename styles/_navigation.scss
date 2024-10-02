@@ -1,0 +1,54 @@
+.nav{
+width:100%;
+max-width: 890px;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+
+& logo{
+
+    font-size: 24px; 
+    font-weight: 400; 
+    color: colors.$navyblue;
+    letter-spacing: -0.25px;
+   line-height: 36px;
+   font-family: fonts.$desktop-logo-font;
+
+   @media screen and (min-width: 1440px) {
+    font-family:  fonts.$desktop-logo-font;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-family: fonts.$logo-font;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-family: fonts.$logo-font;
+    font-weight: 700;
+  }
+}
+& ul{
+    list-style: none;
+    display: flex;
+    gap: 29px;
+    @media screen and (max-width: 320px) {
+      display: none;
+    }
+}
+& li a{
+    text-decoration: none;
+
+}
+&  icon {
+    display: none; 
+    font-size: 24px; 
+    
+  
+    @media screen and (max-width: 320px) {
+      display: block;
+}
+}
+}
