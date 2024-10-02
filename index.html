@@ -7,52 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"> 
-    <link rel="stylesheets" href="styles/normalize.css">
-
-    <link rel="stylesheets" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/styles.css">
     <title>Responsive - Design</title>
 </head>
 <body>
     <nav class="nav">
         <h3 class="logo">Head.</h3>
-        <ul>
-            <li><a href="">Works</a></li>
-            
-            <li><a href="">Services</a></li>
-            <li><a href="">Contacts</a></li>
+        <ul class="nav-links">
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
         </ul>
-        <i class="icon fa-solid fa-ellipsis"></i>
-      </nav>
-      <main>
+        <i class="icon fa-solid fa-bars"></i>
+    </nav>
+    <main>
         <div class="container">
-        <h2 >Patagonia</h2>
-        <p >
-          Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
-          viverra eleifend lacus, vitae ullamcor.
-        </p>
-        <div class="horse-images">
-          <picture>
-            <source
-              media="(max-width: 1440px)"
-              srcset="images/desktop.jpg"/>
-
-            <source
-            media="(max-width: 768px)"
-            srcset="images/tablet.jpg"/>
-
-            <source 
-            media="(max-width: 320px)" 
-            srcset="images/mobile.jpg"/>
-           
-            
-            <img src="images/desktop.jpg" alt="img-horses" />
-          </picture>
+            <h2>Patagonia</h2>
+            <p>
+              Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+              viverra eleifend lacus, vitae ullamcor.
+            </p>
+            <div class="horse-images">
+                <picture>
+                    <source media="(max-width: 1440px)" srcset="images/desktop.jpg"/>
+                    <source media="(max-width: 768px)" srcset="images/tablet.jpg"/>
+                    <source media="(max-width: 320px)" srcset="images/mobile.jpg"/>
+                    <img src="images/desktop.jpg" alt="img-horses" />
+                </picture>
+            </div>
         </div>
-      </div>
-    
-      </main>
-
-
-
+    </main>
 </body>
 </html>

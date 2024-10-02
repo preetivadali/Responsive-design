@@ -3,27 +3,67 @@
 
 @import "navigation";
 
-
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: fonts.$main-font;
-  }
-  
-  main {
-    width: 100%;
-    max-width: 1440px;
-    min-height: 810px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 810px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  width: 100%;
+  background-color: colors.$navyblue;
+}
+
+.logo {
+  font-size: 24px;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon {
+  display: none; 
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; 
   }
 
+  .icon {
+    display: block; 
+  }
+}
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+
   & h2 {
     color: colors.$navyblue;
     font-family: fonts.$heading-font;
@@ -31,22 +71,23 @@ body {
     text-align: center;
     width: 100%;
     max-width: 455px;
-    
     min-height: 102px;
-    
     line-height: 102px;
     letter-spacing: -2px;
     font-size: 90px;
     margin-bottom: 30px;
+
     @media screen and (max-width: 768px) {
       font-size: 72px;
     }
+
     @media screen and (max-width: 320px) {
       font-size: 36px;
     }
   }
+
   & p {
-    color: colors.$darkblue;
+    color: colors.$navyblue;
     text-align: center;
     max-width: 573.5px;
     width: 100%;
@@ -55,17 +96,22 @@ body {
     line-height: 33px;
     font-size: 22px;
     margin: 0px;
+
     @media screen and (max-width: 320px) {
       line-height: 18px;
       font-size: 12px;
       width: 100%;
       max-width: 217px;
       min-height: 49px;
-     
     }
   }
 }
 
-.img-horses {
+.horse-images {
   margin-top: 40px;
+
+  img {
+    width: 100%;
+    max-width: 800px;
+  }
 }
